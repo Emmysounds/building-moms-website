@@ -18,22 +18,22 @@ export const CustomerTrustSection: React.FC<CustomerTrustSectionProps> = ({
 
   const testimonials = [
     {
-      quote: "Sourcing verified 0.55mm aluminium roofing sheets in Nigeria can be stressful because many suppliers substitute gauges. Building Moms Nigeria delivered exact micrometer thickness with matching accessories to our site in Lekki on schedule.",
-      author: "Engr. Babatunde Adeleke",
+      quote: "Sourcing verified 0.55mm aluminium roofing sheets in Nigeria can be stressful because many suppliers substitute gauges. Building Moms Nigeria delivered exact micrometer thickness with matching accessories to our site in Enugu on schedule.",
+      author: "Engr. Emeka Jacob",
       role: "Lead Structural Engineer",
-      location: "Lekki Phase 1, Lagos"
+      location: "Enugu, Nigeria"
     },
     {
-      quote: "Their team took time to calculate the exact pieces of stone-coated bond tiles from our architectural floor plan. We avoided over-ordering and the delivery was handled directly to our site in Ibadan with zero breakages.",
-      author: "Arc. Toyin Oshodi",
+      quote: "Their team took time to calculate piece of roof tiles for the roofing 8 unit of 4 bedroom duplex I built. We avoided over-ordering and the delivery was handled directly to our site in Nsukka",
+      author: "Arc. Chinedu Emmanuel",
       role: "Principal Architect, Design Studio",
-      location: "Bodija, Ibadan"
+      location: "Nsukka, Enugu State"
     },
     {
-      quote: "Supplied 20 tonnes of certified 16mm and 12mm high-yield reinforcement bars for our commercial warehouse foundation. Proper mill certificates and reliable offloading support.",
-      author: "Mallam Sanusi Danbatta",
-      role: "Civil Contractor",
-      location: "Abuja FCT"
+      quote: "Building Moms Nigeria are so reliable. I received the exact pieces of roof tiles I ordered for the roofing 15 unit of 3 bedroom duplex I built. We avoided over-ordering and the delivery was handled directly to my site in Abakaliki.",
+      author: "Sunny Uchechukwu",
+      role: "Civil Contractor & Developer",
+      location: "Abakaliki, Ebonyi State"
     }
   ];
 
