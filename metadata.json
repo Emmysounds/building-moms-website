@@ -1,0 +1,6 @@
+{
+  "name": "Building Moms Nigeria - Building & Roofing Materials Supply",
+  "description": "Premier building materials supply company in Nigeria providing quality roofing sheets, iron rods, cement, nails, building blocks, plumbing and construction materials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
