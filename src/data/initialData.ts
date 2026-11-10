@@ -60,6 +60,14 @@ export const INITIAL_CATEGORIES: ProductCategory[] = [
     description: 'Galvanized roofing nails with umbrella washers, concrete steel nails, carpentry nails, and annealed binding wire.',
     image: '/src/assets/images/category_roofing_accessories_1793631190788.jpg',
     popularItems: ['3" Umbrella Roofing Nails', '25kg Annealed Binding Wire', 'Assorted Carpentry Wire Nails']
+  },
+  {
+    id: 'cat-construction-woods',
+    name: 'Construction Woods & Timber',
+    slug: 'construction-woods',
+    description: 'Quality hardwood, softwood timber, roof trusses, purlins, facia boards, and formwork planks sourced from top timber mills.',
+    image: '/assets/images/category_timber_woods.jpg',
+    popularItems: ['2x4 Hardwood Timber', '2x6 Roof Rafters & Purlins', '1x12 Formwork & Facia Planks']
   }
 ];
 
@@ -297,6 +305,71 @@ export const INITIAL_PRODUCTS: Product[] = [
     image: '/assets/aistudio/roofing_accessories_6b06760a.webp',
     unit: 'Per Piece',
     featured: false
+  },
+  {
+    id: 'prod-hardwood-2x4',
+    name: '2x4 Hardwood Roof Truss & Framing Timber (12ft - 18ft)',
+    categoryId: 'cat-construction-woods',
+    categoryName: 'Construction Woods & Timber',
+    description: 'Well-seasoned, untreated and treated structural hardwood timber for roof trusses, purlins, and wall framing.',
+    fullDescription: 'High-strength structural hardwood timber selected specifically for roofing trusses, carcass framing, and load-bearing ceiling structures. Sourced directly from verified timber mills at Timber Shed Market with consistent cross-sectional sizing and minimal warp.',
+    specifications: [
+      { label: 'Dimensions', value: '2 inches x 4 inches (Actual Cut)' },
+      { label: 'Available Lengths', value: '12 feet, 14 feet, 16 feet, 18 feet' },
+      { label: 'Wood Grade', value: 'Seasoned Hardwood (Obeche / Mahogany / Hardwood)' },
+      { label: 'Common Use', value: 'Roof trusses, king posts, purlins, wall framing' }
+    ],
+    availableSizes: ['12ft Length', '14ft Length', '16ft Length', '18ft Length'],
+    colors: ['Natural Timber'],
+    price: '',
+    priceNote: 'Current Timber Shed daily market rate based on quantity and length',
+    inStock: true,
+    image: '/assets/images/category_timber_woods.jpg',
+    unit: 'Per Piece / Length',
+    featured: true
+  },
+  {
+    id: 'prod-hardwood-2x6',
+    name: '2x6 Structural Roof Rafters & Beams',
+    categoryId: 'cat-construction-woods',
+    categoryName: 'Construction Woods & Timber',
+    description: 'Heavy-duty 2x6 timber rafters engineered for long-span roof pitches, tie beams, and decking supports.',
+    fullDescription: 'Engineered for optimal load capacity under concrete roof tiles and aluminium sheets. Delivers superior flexural resistance without sagging over time.',
+    specifications: [
+      { label: 'Dimensions', value: '2 inches x 6 inches' },
+      { label: 'Available Lengths', value: '14 feet, 16 feet, 18 feet' },
+      { label: 'Wood Grade', value: 'Heavy Structural Hardwood' },
+      { label: 'Common Use', value: 'Tie beams, primary roof rafters, floor joists' }
+    ],
+    availableSizes: ['14ft Length', '16ft Length', '18ft Length'],
+    colors: ['Natural Timber'],
+    price: '',
+    priceNote: 'Direct sawmill rate available on enquiry',
+    inStock: true,
+    image: '/assets/images/category_timber_woods.jpg',
+    unit: 'Per Piece',
+    featured: false
+  },
+  {
+    id: 'prod-formwork-1x12',
+    name: '1x12 Marine Board & Formwork Planks',
+    categoryId: 'cat-construction-woods',
+    categoryName: 'Construction Woods & Timber',
+    description: 'Smooth, durable wooden boards for concrete formwork, columns, lintels, and facia finishing.',
+    fullDescription: 'High-density wooden formwork planks designed to withstand wet concrete pressure during casting of pillars, lintels, decking, and beams without blowout or deformation.',
+    specifications: [
+      { label: 'Dimensions', value: '1 inch x 12 inches x 12 feet' },
+      { label: 'Surface', value: 'Clean sawed / planed' },
+      { label: 'Common Use', value: 'Concrete formwork, facia board, scaffolding' }
+    ],
+    availableSizes: ['1x12x12ft', '3/4 inch Marine Board 8x4ft'],
+    colors: ['Natural Wood / Dark Brown'],
+    price: '',
+    priceNote: 'Volume discounts for site deliveries',
+    inStock: true,
+    image: '/assets/images/category_timber_woods.jpg',
+    unit: 'Per Sheet / Plank',
+    featured: true
   }
 ];
 

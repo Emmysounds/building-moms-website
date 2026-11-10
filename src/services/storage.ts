@@ -59,6 +59,13 @@ export function getProducts(): Product[] {
       }
       return p;
     });
+    // Ensure new initial products exist
+    for (const initP of INITIAL_PRODUCTS) {
+      if (!updated.some(p => p.id === initP.id)) {
+        updated.push(initP);
+        changed = true;
+      }
+    }
     if (changed) {
       localStorage.setItem(STORAGE_KEYS.PRODUCTS, JSON.stringify(updated));
     }
@@ -123,6 +130,13 @@ export function getCategories(): ProductCategory[] {
       }
       return c;
     });
+    // Ensure new initial categories exist
+    for (const initC of INITIAL_CATEGORIES) {
+      if (!updated.some(c => c.id === initC.id)) {
+        updated.push(initC);
+        changed = true;
+      }
+    }
     if (changed) {
       localStorage.setItem(STORAGE_KEYS.CATEGORIES, JSON.stringify(updated));
     }

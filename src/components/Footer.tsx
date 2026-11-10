@@ -22,12 +22,16 @@ export const Footer: React.FC<FooterProps> = ({ settings, categories, onNavigate
           {/* Col 1 & 2: Brand Story */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl tracking-tight shadow">
-                BM
+              <div className="w-11 h-11 rounded-lg overflow-hidden bg-black border border-slate-800 shadow shrink-0 flex items-center justify-center">
+                <img
+                  src="/assets/aistudio/Gemini_Generated_Image_tg8p4ltg8p4ltg8p_43847f3c.jfif"
+                  alt="Building Moms Nigeria Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <span className="text-xl font-bold tracking-tight text-white block">
-                  Building Moms Nigeria
+                  BuildingMoms Nigeria
                 </span>
                 <span className="text-xs text-slate-400 uppercase tracking-wider">
                   Building & Construction Materials Supply
@@ -36,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ settings, categories, onNavigate
             </div>
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-md">
-              Building Moms Nigeria is a trusted building materials supply business helping individuals, contractors, builders, property developers, and engineers source verified quality construction materials with transparency and dependable nationwide delivery.
+              BuildingMoms Nigeria is a trusted building materials supply business helping individuals, contractors, builders, property developers, and engineers source verified quality construction materials with transparency and dependable nationwide delivery.
             </p>
 
             <div className="pt-2 flex items-center gap-3">

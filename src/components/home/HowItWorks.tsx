@@ -41,7 +41,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({
             Straightforward Process
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-            How Sourcing Works with Building Moms Nigeria
+            How Sourcing Works with BuildingMoms Nigeria
           </h2>
           <p className="mt-2 text-sm text-slate-600">
             A seamless three-step pathway from requirement to delivery at your construction site.

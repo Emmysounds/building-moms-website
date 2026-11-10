@@ -28,7 +28,7 @@ export const RoofingSolutionsSection: React.FC<RoofingSolutionsSectionProps> = (
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-              Whether you are building a new home or replacing an existing roof, Building Moms Nigeria can help you identify the roofing materials required for your project and request a quotation.
+              Whether you are building a new home or replacing an existing roof, BuildingMoms Nigeria can help you identify the roofing materials required for your project and request a quotation.
             </p>
 
             {/* Checklist of what's covered */}

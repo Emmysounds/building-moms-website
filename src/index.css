@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+@theme {
+  /* Golden Brand Palette anchored around #D7A350 */
+  --color-amber-50: #fdf8ee;
+  --color-amber-100: #faefdd;
+  --color-amber-200: #f4dcb4;
+  --color-amber-300: #ecc88f;
+  --color-amber-400: #e2b66e;
+  --color-amber-500: #D7A350;
+  --color-amber-600: #c28e3a;
+  --color-amber-700: #9e7029;
+  --color-amber-800: #7c561e;
+  --color-amber-900: #5e4015;
+  --color-amber-950: #3d280b;
+
+  --color-gold: #D7A350;
+  --color-gold-50: #fdf8ee;
+  --color-gold-100: #faefdd;
+  --color-gold-200: #f4dcb4;
+  --color-gold-300: #ecc88f;
+  --color-gold-400: #e2b66e;
+  --color-gold-500: #D7A350;
+  --color-gold-600: #c28e3a;
+  --color-gold-700: #9e7029;
+  --color-gold-800: #7c561e;
+  --color-gold-900: #5e4015;
+}
+
 @layer base {
   html {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;

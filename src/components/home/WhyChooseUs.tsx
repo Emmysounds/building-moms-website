@@ -45,7 +45,7 @@ export const WhyChooseUs: React.FC = () => {
             Built on Integrity
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight text-balance">
-            Why Contractors & Homeowners Choose Building Moms Nigeria
+            Why Contractors & Homeowners Choose BuildingMoms Nigeria
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600">
             Building in Nigeria requires trusted partners who deliver exactly what was specified. We prioritize transparency, authentic materials, and dependable customer service.

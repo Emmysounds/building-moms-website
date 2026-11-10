@@ -44,7 +44,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Supporting Text */}
           <p className="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl font-normal">
-            From roofing sheets and iron rods to nails and essential construction materials, Building Moms Nigeria helps you source the materials you need to build with confidence.
+            From roofing sheets, iron rods, woods, cement, blocks, and essential construction materials, BuildingMoms Nigeria helps you source the materials you need to build with confidence.
           </p>
 
           {/* Prominent Action Buttons */}

@@ -26,15 +26,19 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, setting
           onClick={() => handleNav('home')}
           className="flex items-center gap-2.5 text-left focus:outline-none group shrink-0"
         >
-          <div className="w-10 h-10 rounded-lg bg-slate-900 text-amber-500 flex items-center justify-center font-black text-xl tracking-tight shadow-sm border border-slate-800 transition-transform group-hover:scale-105">
-            BM
+          <div className="w-11 h-11 rounded-lg overflow-hidden bg-black border border-slate-800 shadow-sm transition-transform group-hover:scale-105 shrink-0 flex items-center justify-center">
+            <img
+              src="/assets/aistudio/Gemini_Generated_Image_tg8p4ltg8p4ltg8p_43847f3c.jfif"
+              alt="Building Moms Nigeria Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex flex-col">
             <span className="text-lg font-bold tracking-tight text-slate-900 leading-tight whitespace-nowrap">
-              Building Moms Nigeria
+              BuildingMoms Nigeria
             </span>
             <span className="text-[11px] font-medium text-slate-500 tracking-wide">
-              ...Let's build it
+              ...come, let's build it
             </span>
           </div>
         </button>
@@ -83,20 +87,21 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, setting
           </button>
         </nav>
 
-        {/* Zone 3: 1 primary action */}
+        {/* Zone 3: Actions & Mobile Toggle */}
         <div className="flex items-center gap-3 shrink-0">
+          {/* Restored button: visible on tablet (tap) & laptop, hidden on mobile */}
           <button
             onClick={() => handleNav('quote-wizard')}
-            className="px-5 py-2.5 text-sm font-semibold text-white bg-amber-600 hover:bg-amber-700 active:bg-amber-800 rounded-lg shadow-sm transition-all flex items-center gap-2 whitespace-nowrap cursor-pointer"
+            className="hidden md:inline-flex h-[34px] px-3.5 text-xs font-semibold text-white bg-amber-600 hover:bg-amber-700 active:bg-amber-800 rounded-lg shadow-sm transition-all items-center justify-center gap-1.5 whitespace-nowrap cursor-pointer"
           >
-            <span>Get a Quote</span>
-            <ArrowRight className="w-4 h-4" />
+            <span className="leading-[17px]">Get a Quote</span>
+            <ArrowRight className="w-3.5 h-3.5 shrink-0" />
           </button>
 
           {/* Mobile hamburger button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-slate-700 hover:text-slate-900 rounded-lg hover:bg-slate-100 transition-colors"
+            className="lg:hidden p-2 text-slate-700 hover:text-slate-900 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

@@ -242,8 +242,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onExit }) => {
       <div className="bg-slate-900 text-white border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-amber-500 text-slate-950 font-black flex items-center justify-center text-sm">
-              BM
+            <div className="w-8 h-8 rounded-lg overflow-hidden bg-black border border-slate-800 shadow shrink-0 flex items-center justify-center">
+              <img
+                src="/assets/aistudio/Gemini_Generated_Image_tg8p4ltg8p4ltg8p_43847f3c.jfif"
+                alt="Building Moms Nigeria Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <span className="font-bold text-sm text-white block">Building Moms Nigeria Admin</span>

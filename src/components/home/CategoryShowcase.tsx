@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Layers, Hammer, Box, Wrench, Shield } from 'lucide-react';
+import { ArrowRight, Layers, Hammer, Box, Wrench, Shield, TreePine } from 'lucide-react';
 import { ProductCategory } from '../../types';
 
 interface CategoryShowcaseProps {
@@ -13,6 +13,7 @@ const CATEGORY_ICONS: Record<string, React.ElementType> = {
   'cat-cement-blocks': Box,
   'cat-roofing-accessories': Shield,
   'cat-nails-binding': Wrench,
+  'cat-construction-woods': TreePine,
 };
 
 export const CategoryShowcase: React.FC<CategoryShowcaseProps> = ({
