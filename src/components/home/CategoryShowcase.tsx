@@ -16,6 +16,15 @@ const CATEGORY_ICONS: Record<string, React.ElementType> = {
   'cat-construction-woods': TreePine,
 };
 
+const CATEGORY_VIDEOS: Record<string, string> = {
+  'cat-roofing-sheets': '/assets/aistudio/InShot_20261117_162835785_16b68232.mp4',
+  'cat-iron-rods': '/assets/aistudio/InShot_20261117_164800470_89a68c4c.mp4',
+  'cat-cement-blocks': '/assets/aistudio/InShot_20261117_163947859_f9847365.mp4',
+  'cat-roofing-accessories': '/assets/aistudio/InShot_20261118_103951721_068937ba.mp4',
+  'cat-nails-binding': '/assets/aistudio/InShot_20261117_165133975_aa8a36cb.mp4',
+  'cat-construction-woods': '/assets/aistudio/InShot_20261117_164435464_14e468bb.mp4',
+};
+
 export const CategoryShowcase: React.FC<CategoryShowcaseProps> = ({
   categories,
   onSelectCategory
@@ -51,6 +60,7 @@ export const CategoryShowcase: React.FC<CategoryShowcaseProps> = ({
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((cat) => {
             const Icon = CATEGORY_ICONS[cat.id] || Box;
+            const videoSrc = CATEGORY_VIDEOS[cat.id];
 
             return (
               <div
@@ -59,16 +69,28 @@ export const CategoryShowcase: React.FC<CategoryShowcaseProps> = ({
               >
                 {/* Image Container with Fallback */}
                 <div className="relative aspect-[4/3] bg-slate-100 overflow-hidden">
-                  <img
-                    src={cat.image}
-                    alt={cat.name}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      // Fallback gracefully to solid slate gradient
-                      (e.currentTarget as HTMLElement).style.display = 'none';
-                    }}
-                  />
+                  {videoSrc ? (
+                    <video
+                      src={videoSrc}
+                      poster={cat.image}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  ) : (
+                    <img
+                      src={cat.image}
+                      alt={cat.name}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        // Fallback gracefully to solid slate gradient
+                        (e.currentTarget as HTMLElement).style.display = 'none';
+                      }}
+                    />
+                  )}
                   {/* Subtle gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
