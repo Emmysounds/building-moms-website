@@ -26,10 +26,10 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, setting
           onClick={() => handleNav('home')}
           className="flex items-center gap-2.5 text-left focus:outline-none group shrink-0"
         >
-          <div className="w-11 h-11 rounded-lg overflow-hidden bg-black border border-slate-800 shadow-sm transition-transform group-hover:scale-105 shrink-0 flex items-center justify-center">
+          <div className="w-12 h-12 rounded-lg overflow-hidden bg-black border border-amber-500/40 shadow-sm transition-transform group-hover:scale-105 shrink-0 flex items-center justify-center">
             <img
               src="/assets/aistudio/Gemini_Generated_Image_tg8p4ltg8p4ltg8p_43847f3c.jfif"
-              alt="Building Moms Nigeria Logo"
+              alt="BuildingMoms Nigeria Logo"
               className="w-full h-full object-cover"
             />
           </div>

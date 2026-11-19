@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  Lock, 
   Unlock, 
   Package, 
   Calculator, 
@@ -132,8 +131,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onExit }) => {
     return (
       <div className="py-20 bg-slate-900 min-h-screen flex items-center justify-center p-4">
         <div className="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl border border-slate-800 text-center space-y-6">
-          <div className="w-14 h-14 rounded-2xl bg-slate-900 text-amber-500 flex items-center justify-center mx-auto shadow-md">
-            <Lock className="w-7 h-7" />
+          <div className="w-16 h-16 rounded-2xl overflow-hidden bg-black border border-amber-500/40 flex items-center justify-center mx-auto shadow-md">
+            <img
+              src="/assets/aistudio/Gemini_Generated_Image_tg8p4ltg8p4ltg8p_43847f3c.jfif"
+              alt="BuildingMoms Nigeria Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           <div>
