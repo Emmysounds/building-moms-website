@@ -48,17 +48,60 @@ export function getProducts(): Product[] {
     if (filtered.length !== parsed.length) {
       changed = true;
     }
-    const updated = filtered.map(p => {
+    const hardwoodInit = INITIAL_PRODUCTS.find(p => p.id === 'prod-hardwood-2x4');
+    const hadStepTile = filtered.some(p => p.id === 'prod-steptile-055');
+    const seenIds = new Set<string>();
+    const updated: Product[] = [];
+    for (const p of filtered) {
+      let item = p;
+      if (p.id === 'prod-steptile-055') {
+        changed = true;
+        if (hardwoodInit && !seenIds.has(hardwoodInit.id)) {
+          seenIds.add(hardwoodInit.id);
+          updated.push(hardwoodInit);
+        }
+        continue;
+      }
+      if (hadStepTile && p.id === 'prod-hardwood-2x4') {
+        changed = true;
+        continue;
+      }
+      if (seenIds.has(p.id)) {
+        changed = true;
+        continue;
+      }
+      seenIds.add(p.id);
       if (p.id === 'prod-stone-coated-bond' && p.image !== '/assets/aistudio/roof_tiles_3f4d4001.webp') {
         changed = true;
-        return { ...p, image: '/assets/aistudio/roof_tiles_3f4d4001.webp' };
-      }
-      if (p.id === 'prod-ridge-caps-050' && p.image !== '/assets/aistudio/roofing_accessories_6b06760a.webp') {
+        item = { ...p, image: '/assets/aistudio/roof_tiles_3f4d4001.webp' };
+      } else if (p.id === 'prod-ridge-caps-050' && p.image !== '/assets/aistudio/roofing_accessories_6b06760a.webp') {
         changed = true;
-        return { ...p, image: '/assets/aistudio/roofing_accessories_6b06760a.webp' };
+        item = { ...p, image: '/assets/aistudio/roofing_accessories_6b06760a.webp' };
+      } else if (p.id === 'prod-iron-rod-12mm' && p.image !== '/assets/aistudio/images__1__fea9fb31.jfif') {
+        changed = true;
+        item = { ...p, image: '/assets/aistudio/images__1__fea9fb31.jfif' };
+      } else if (p.id === 'prod-iron-rod-16mm' && p.image !== '/assets/aistudio/download_2dcbaac9.webp') {
+        changed = true;
+        item = { ...p, image: '/assets/aistudio/download_2dcbaac9.webp' };
+      } else if (p.id === 'prod-cement-50kg' && p.image !== '/assets/aistudio/images__4__b89eaf1f.jfif') {
+        changed = true;
+        item = { ...p, image: '/assets/aistudio/images__4__b89eaf1f.jfif' };
+      } else if (p.id === 'prod-ls-050-alum' && p.image !== '/assets/aistudio/images__6__867866fd.jfif') {
+        changed = true;
+        item = { ...p, image: '/assets/aistudio/images__6__867866fd.jfif' };
+      } else if (
+        p.id === 'prod-hardwood-2x4' &&
+        (p.image !== '/assets/aistudio/images__7__a7b45096.jfif' || p.name !== 'Hardwood roof truss (12ft - 18ft)')
+      ) {
+        changed = true;
+        item = {
+          ...p,
+          name: 'Hardwood roof truss (12ft - 18ft)',
+          image: '/assets/aistudio/images__7__a7b45096.jfif'
+        };
       }
-      return p;
-    });
+      updated.push(item);
+    }
     // Ensure new initial products exist
     for (const initP of INITIAL_PRODUCTS) {
       if (!updated.some(p => p.id === initP.id)) {

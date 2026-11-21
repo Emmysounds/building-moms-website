@@ -96,7 +96,7 @@ export const AboutUsPage: React.FC<AboutUsPageProps> = ({
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-3">Our Mission</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              To supply premium, certified building and roofing materials across Nigeria with honesty, accurate specifications, and dependable logistics that empower clients to build with peace of mind.
+              To provide genuine, quality-assured and affordable building materials through reliable supply, professional guidance, convenient purchasing and customer-focused services, while creating opportunities for women in the construction industry.
             </p>
           </div>
 
@@ -107,7 +107,7 @@ export const AboutUsPage: React.FC<AboutUsPageProps> = ({
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-3">Our Vision</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              To be Nigeria's most trusted building materials partner, recognized for setting the industry benchmark in material authenticity, technical advisory, and customer satisfaction.
+              To become one of Nigeria's most trusted and recognized building materials and construction supply companies, providing comprehensive construction solutions while contributing to the growth and development of the industry.
             </p>
           </div>
 
@@ -124,11 +124,15 @@ export const AboutUsPage: React.FC<AboutUsPageProps> = ({
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span><strong>Reliability:</strong> Dependable on-time delivery.</span>
+                <span><strong>Quality:</strong> We are committed to supplying genuine materials that meet the required product specifications and customer expectations.</span>
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span><strong>Transparency:</strong> Clear pricing with zero hidden surcharges.</span>
+                <span><strong>Professionalism:</strong> We approach every transaction with competence, respect, accountability and a commitment to excellent service.</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span><strong>Trust and dependability:</strong> We strive to become a company customers can confidently rely on for their construction material needs.</span>
               </li>
             </ul>
           </div>

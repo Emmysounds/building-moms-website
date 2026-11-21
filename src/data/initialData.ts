@@ -91,30 +91,30 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: '', // Fluctuating market rate
     priceNote: 'Quote based on current coil market rate & custom cut lengths',
     inStock: true,
-    image: '/src/assets/images/category_roofing_sheets_1793631188773.jpg',
+    image: '/assets/aistudio/images__6__867866fd.jfif',
     unit: 'Per Meter / Square Meter',
     featured: true
   },
   {
-    id: 'prod-steptile-055',
-    name: '0.55mm Step-Tile Aluminium Roofing Sheet',
-    categoryId: 'cat-roofing-sheets',
-    categoryName: 'Roofing Sheets',
-    description: 'Architectural tile-look aluminium sheet offering the timeless elegance of roof tiles with lightweight durability.',
-    fullDescription: 'Step-Tile profile sheets combine the aesthetic prestige of traditional clay or concrete roof tiles with the lightweight, rust-free endurance of heavy 0.55mm aluminium. Ideal for contemporary Nigerian duplexes, bungalows, and executive estates.',
+    id: 'prod-hardwood-2x4',
+    name: 'Hardwood roof truss (12ft - 18ft)',
+    categoryId: 'cat-construction-woods',
+    categoryName: 'Construction Woods & Timber',
+    description: 'Well-seasoned, untreated and treated structural hardwood timber for roof trusses, purlins, and wall framing.',
+    fullDescription: 'High-strength structural hardwood timber selected specifically for roofing trusses, carcass framing, and load-bearing ceiling structures. Sourced directly from verified timber mills at Timber Shed Market with consistent cross-sectional sizing and minimal warp.',
     specifications: [
-      { label: 'Thickness Gauge', value: '0.55mm Structural Grade' },
-      { label: 'Step Height', value: '25mm Distinct Decorative Step' },
-      { label: 'Overlap Protection', value: 'Capillary Groove Anti-Siphon Channel' },
-      { label: 'Coating', value: 'High-Durability Polyester Powder Finish' }
+      { label: 'Dimensions', value: '2 inches x 4 inches (Actual Cut)' },
+      { label: 'Available Lengths', value: '12 feet, 14 feet, 16 feet, 18 feet' },
+      { label: 'Wood Grade', value: 'Seasoned Hardwood (Obeche / Mahogany / Hardwood)' },
+      { label: 'Common Use', value: 'Roof trusses, king posts, purlins, wall framing' }
     ],
-    availableSizes: ['0.50mm gauge', '0.55mm gauge'],
-    colors: ['Chocolate Brown', 'Midnight Black', 'Terracotta Red', 'Wine Red'],
+    availableSizes: ['12ft Length', '14ft Length', '16ft Length', '18ft Length'],
+    colors: ['Natural Timber'],
     price: '',
-    priceNote: 'Supplied cut to roof truss specifications',
+    priceNote: 'Current Timber Shed daily market rate based on quantity and length',
     inStock: true,
-    image: '/src/assets/images/hero_roofing_construction_1793631189514.jpg',
-    unit: 'Per Meter Run',
+    image: '/assets/aistudio/images__7__a7b45096.jfif',
+    unit: 'Per Piece / Length',
     featured: true
   },
   {
@@ -158,7 +158,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: '',
     priceNote: 'Direct mill rate per tonne or per length',
     inStock: true,
-    image: '/src/assets/images/category_iron_rods_1793631189292.jpg',
+    image: '/assets/aistudio/images__1__fea9fb31.jfif',
     unit: 'Per Length / Per Tonne',
     featured: true
   },
@@ -179,7 +179,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: '',
     priceNote: 'Bulk truckload or retail bundle prices available',
     inStock: true,
-    image: '/src/assets/images/category_iron_rods_1793631189292.jpg',
+    image: '/assets/aistudio/download_2dcbaac9.webp',
     unit: 'Per Length / Per Tonne',
     featured: true
   },
@@ -220,7 +220,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: '',
     priceNote: 'Direct warehouse pickup or site trailer dispatch rate',
     inStock: true,
-    image: '/src/assets/images/category_cement_blocks_1793631190688.jpg',
+    image: '/assets/aistudio/images__4__b89eaf1f.jfif',
     unit: 'Per 50kg Bag / Trailer Load',
     featured: true
   },
@@ -305,28 +305,6 @@ export const INITIAL_PRODUCTS: Product[] = [
     image: '/assets/aistudio/roofing_accessories_6b06760a.webp',
     unit: 'Per Piece',
     featured: false
-  },
-  {
-    id: 'prod-hardwood-2x4',
-    name: '2x4 Hardwood Roof Truss & Framing Timber (12ft - 18ft)',
-    categoryId: 'cat-construction-woods',
-    categoryName: 'Construction Woods & Timber',
-    description: 'Well-seasoned, untreated and treated structural hardwood timber for roof trusses, purlins, and wall framing.',
-    fullDescription: 'High-strength structural hardwood timber selected specifically for roofing trusses, carcass framing, and load-bearing ceiling structures. Sourced directly from verified timber mills at Timber Shed Market with consistent cross-sectional sizing and minimal warp.',
-    specifications: [
-      { label: 'Dimensions', value: '2 inches x 4 inches (Actual Cut)' },
-      { label: 'Available Lengths', value: '12 feet, 14 feet, 16 feet, 18 feet' },
-      { label: 'Wood Grade', value: 'Seasoned Hardwood (Obeche / Mahogany / Hardwood)' },
-      { label: 'Common Use', value: 'Roof trusses, king posts, purlins, wall framing' }
-    ],
-    availableSizes: ['12ft Length', '14ft Length', '16ft Length', '18ft Length'],
-    colors: ['Natural Timber'],
-    price: '',
-    priceNote: 'Current Timber Shed daily market rate based on quantity and length',
-    inStock: true,
-    image: '/assets/images/category_timber_woods.jpg',
-    unit: 'Per Piece / Length',
-    featured: true
   },
   {
     id: 'prod-hardwood-2x6',
